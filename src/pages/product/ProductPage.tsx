@@ -1,6 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Component } from 'react';
 import productAPI from './ProductAPI';
 import Layout from '../../components/layouts/Layout';
+import ProductCard from './components/ProductCard';
+
+class Page extends Component {
+    render(){
+        return(
+            <Layout>
+                <h1>This is Product page</h1>
+            </Layout>
+        );
+    };
+}
 
 const ProductPage = () =>{
     const [productList, setProductList] = useState([]);

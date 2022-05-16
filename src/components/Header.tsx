@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import './header.scss'
 
 const Header = () => {
     return (
@@ -10,13 +11,14 @@ const Header = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="/products">Products</Nav.Link>
                         <Nav.Link href="/categories">Categories</Nav.Link>
-                        <NavDropdown title="Stock" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Log</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Import</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Others</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link href="/stock">Stock</Nav.Link>
                     </Nav>
+                    <NavDropdown title="Username" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Change password</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">Log out</NavDropdown.Item>
+                    </NavDropdown>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
