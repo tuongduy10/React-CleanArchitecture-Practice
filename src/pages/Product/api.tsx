@@ -1,7 +1,7 @@
 import axiosClient from "../../config/api";
 
 const product = {
-    getProductList: (params: JSON) => {
+    getProductList: (params: object) => {
         return axiosClient.get('/products', {params})
     },
 

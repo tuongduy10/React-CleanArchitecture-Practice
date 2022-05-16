@@ -4,13 +4,17 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import route from './pages/index';
+import Header from './components/Header/header';
 
 function App() {
   return (
     <BrowserRouter>
+      <Header/>
+      
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="products" element={<App />} />
+        <Route path="/" element={ <route.ProductPage/> } />
+        <Route path="products" element={<route.CategoryPage/>} />
         <Route path="categories" element={<App />} />
       </Routes>
     </BrowserRouter>
