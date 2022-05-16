@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import productAPI from './ProductAPI';
-import Header from '../../components/Header';
-import Layout from '../../components/layout/Layout';
+import Layout from '../../components/layouts/Layout';
 
 const ProductPage = () =>{
     const [productList, setProductList] = useState([]);

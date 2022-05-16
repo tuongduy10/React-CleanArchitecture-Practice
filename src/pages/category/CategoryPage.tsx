@@ -1,6 +1,10 @@
+import Layout from "../../components/layouts/Layout";
+
 const CategoryPage = () => {
     return(
-        <h1>This is Category page</h1>
+        <Layout>
+            <h1>This is Category page</h1>
+        </Layout>
     );
 }
 

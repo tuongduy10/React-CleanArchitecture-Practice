@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/' element={ <route.HomePage/> } />
         <Route path="/products" element={ <route.ProductPage/> } />
         <Route path="/categories" element={<route.CategoryPage/>} />
       </Routes>

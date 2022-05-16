@@ -1,9 +1,20 @@
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import React from "react";
 
 const Footer = () => {
-    return (
-        <h1>This is Footer</h1>
-    )
+  return (
+    <div 
+        className="w-100" 
+        style={{
+            backgroundColor: '#f8f9fa',
+        }}
+    >
+        <ul>
+            <li>Need help ?</li>
+            <li>Our Company</li>
+            <li>Contact for work</li>
+        </ul>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
