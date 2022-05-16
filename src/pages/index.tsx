@@ -1,4 +1,4 @@
-import ProductPage  from './Product/product-page';
-import CategoryPage from './Category/category-page'
+import ProductPage  from './product/ProductPage';
+import CategoryPage from './category/CategoryPage'
 
 export default { ProductPage, CategoryPage };

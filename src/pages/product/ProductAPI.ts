@@ -1,6 +1,6 @@
-import axiosClient from "../../config/api";
+import axiosClient from "../../config/apiClient";
 
-const product = {
+const ProductAPI = {
     getProductList: (params: object) => {
         return axiosClient.get('/products', {params})
     },
@@ -10,4 +10,4 @@ const product = {
     }
 }
 
-export default product;
+export default ProductAPI;
