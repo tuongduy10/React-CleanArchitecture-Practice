@@ -6,9 +6,11 @@ const Layout = (props: any) =>{
     return(
         <div>
             <Header/>
+
             <div className='container main-content' >
                 {props.children}
             </div>
+            
             <Footer/>
         </div>
     )
