@@ -1,6 +1,6 @@
 import axios from 'axios';
 import queryString from 'query-string';
-import { API_BASE_URL } from './constants'
+import { API_BASE_URL } from '../constants/apiConstant';
 
 // Set up default config for http requests here
 // Please have a look at here `https://github.com/axios/axios#request- config` for the full list of configs
@@ -13,6 +13,9 @@ const axiosClient = axios.create({
 });
 
 axiosClient.interceptors.request.use(async (config) => {
+  config.headers = {
+    
+  }
   return config;
 });
 
@@ -26,5 +29,6 @@ axiosClient.interceptors.response.use((response) => {
   // Handle errors
   throw error;
 });
+
 
 export default axiosClient;

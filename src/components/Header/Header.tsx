@@ -1,6 +1,7 @@
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import '../assets/styles/header.scss'
+import './header.scss'
 
+ 
 const Header = () => {
     return (
         <Navbar bg="light" expand="lg">
@@ -12,6 +13,7 @@ const Header = () => {
                         <Nav.Link href="/products">Products</Nav.Link>
                         <Nav.Link href="/categories">Categories</Nav.Link>
                         <Nav.Link href="/stock">Stock</Nav.Link>
+                        <Nav.Link href="/stock">Users</Nav.Link>
                     </Nav>
                     <NavDropdown title="Username" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>

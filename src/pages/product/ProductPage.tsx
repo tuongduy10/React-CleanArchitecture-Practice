@@ -1,6 +1,6 @@
 import { useEffect, useState, Component } from 'react';
 import productAPI from './ProductAPI';
-import Layout from '../../components/layouts/Layout';
+import Layout from '../../layouts/Layout';
 
 const ProductPage = () =>{
     const [productList, setProductList] = useState([]);
@@ -12,10 +12,11 @@ const ProductPage = () =>{
                     _pageIndex: 1, 
                     _pageSize: 20
                 };
+
                 const response = await productAPI.getProductList(params);
                 setProductList(response.data);
-            }catch{
-                console.log('Fail to get');
+            }catch(e) {
+                console.log('Fail to get', e);
             }
         }
 

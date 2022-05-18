@@ -6,7 +6,7 @@ const Footer = () => {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Nav className="w-100">
-                    <div className="row w-100">
+                    <div className="row w-100 footer-wrapper">
                         <div className="col">
                             <Nav.Link href="/">About us</Nav.Link>
                             <Nav.Link href="/">Contact</Nav.Link>

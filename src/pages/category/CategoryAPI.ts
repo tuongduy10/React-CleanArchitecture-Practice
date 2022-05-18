@@ -1,4 +1,4 @@
-import axiosClient from "../../../config/apiClient";
+import axiosClient from "../../config/apiClient";
 
 const CategoryAPI = {
     getCategoryList: (params: object) => {

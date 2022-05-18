@@ -1,4 +1,4 @@
-import Layout from "../../components/layouts/Layout";
+import Layout from "../../layouts/Layout";
 
 const CategoryPage = () => {
     return(

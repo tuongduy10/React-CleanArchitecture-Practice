@@ -4,7 +4,6 @@ const ProductAPI = {
     getProductList: (params: object) => {
         return axiosClient.get('/products', {params})
     },
-
     getProductById: (id: number) =>{
         return axiosClient.post(`/products/${id}`)
     }
