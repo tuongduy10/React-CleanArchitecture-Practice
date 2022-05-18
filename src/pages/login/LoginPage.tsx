@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./login.scss";
 const LoginPage = (props: any) => {
   function signIn() {
     console.log("loged in");
@@ -51,14 +50,14 @@ const LoginPage = (props: any) => {
                           className="form-check-label"
                           htmlFor="rememberMe"
                         >
-                          Remember Me!
+                          Remember Me! 
                         </label>
                       </div>
 
                       <div className="d-flex justify-content-center">
                         <button
                           type="button"
-                          className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                          className="btn btn-primary"
                         >
                           Login
                         </button>

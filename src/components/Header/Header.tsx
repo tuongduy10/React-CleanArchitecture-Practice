@@ -25,7 +25,7 @@ const Header = () => {
                             Change password
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
+                        <NavDropdown.Item href="/login">
                             <Icon.BoxArrowRight className='icon'/>
                             Log out
                         </NavDropdown.Item>
