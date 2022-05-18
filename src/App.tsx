@@ -22,6 +22,7 @@ function App() {
           <Route path="/categories" element={<routes.CategoryPage />} />
           <Route path="/stock" element={<routes.StockPage />} />
           <Route path='/login' element={<routes.LoginPage />} />
+          <Route path='/signup' element={<routes.SignupPage />} />
         </Routes>
       </Provider>
     </BrowserRouter>
