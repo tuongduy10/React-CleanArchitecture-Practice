@@ -1,0 +1,17 @@
+{
+    "user": [
+        {
+          "id": 3,
+          "name": "Trần Đình Thông",
+          "password": "123",
+          "role": "USER",
+          "email": "user1@bstarsolutions.com",
+          "phone": "0868076100",
+          "status": "Avaiable",
+          "type": "SYSTEM"
+        },
+        {
+
+        }
+    ]
+}

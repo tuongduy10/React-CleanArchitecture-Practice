@@ -1,32 +1,30 @@
 import { useEffect, useState, Component } from 'react';
 import productAPI from './ProductAPI';
-import Layout from '../../layouts/Layout';
+import ProductLayout from '../../layouts/ProductLayout/ProductLayout';
+import ProductList from './components/ProductList';
+
+// Fake data
+import data from '../../_mock/products.json'
 
 const ProductPage = () =>{
-    const [productList, setProductList] = useState([]);
+    const [productList, setProductList] = useState<any>([]);
 
     useEffect(()=>{
         const fetchProductList = async () => {
             try{
-                const params = {
-                    _pageIndex: 1, 
-                    _pageSize: 20
-                };
-
-                const response = await productAPI.getProductList(params);
-                setProductList(response.data);
+                // const response = await productAPI.getProductList();
+                setProductList(data);
             }catch(e) {
                 console.log('Fail to get', e);
             }
         }
-
         fetchProductList();
-    })
+    },[data])
 
     return (
-        <Layout>
-            <h1>This is Product page</h1>
-        </Layout>
+        <ProductLayout>
+            <ProductList data={productList}/>
+        </ProductLayout>
     )
 };
 

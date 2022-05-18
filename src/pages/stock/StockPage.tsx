@@ -1,4 +1,4 @@
-import Layout from "../../layouts/Layout";
+import Layout from "../../layouts/MainLayout/Layout";
 
 const StockPage = () => {
     return(

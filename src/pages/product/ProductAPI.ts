@@ -1,8 +1,8 @@
 import axiosClient from "../../config/apiClient";
 
 const ProductAPI = {
-    getProductList: (params: object) => {
-        return axiosClient.get('/products', {params})
+    getProductList: () => {
+        return axiosClient.get('/products')
     },
     getProductById: (id: number) =>{
         return axiosClient.post(`/products/${id}`)

@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 const Layout = (props: any) =>{
     return(
-        <div>
+        <>
             <Header/>
 
             <div className='container main-content' >
@@ -12,7 +12,7 @@ const Layout = (props: any) =>{
             </div>
             
             <Footer/>
-        </div>
+        </>
     )
 }
 
