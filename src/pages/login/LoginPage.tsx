@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import BfLayout from "../../layouts/BeforeLayout";
 import "./login.scss";
 const LoginPage = (props: any) => {
   function signIn() {
@@ -7,11 +6,10 @@ const LoginPage = (props: any) => {
   }
 
   return (
-    <BfLayout>
-      <section className="vh-100 bg-image">
+      <section className="vh-100 vw-50 bg-image">
         <div className="mask d-flex align-items-center h-100 gradient-custom-3">
           <div className="container h-100">
-            <div className="row d-flex justify-content-center align-items-center h-100">
+            <div className="row justify-content-center align-items-center h-100">
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div className="card" style={{ borderRadius: "15px" }}>
                   <div className="card-body p-5">
@@ -20,7 +18,7 @@ const LoginPage = (props: any) => {
                     </h2>
 
                     <form>
-                      <div className="form-outline mb-4">
+                      <div className="form-outline mb-2">
                         <label className="form-label" htmlFor="userName">
                           User Name
                         </label>
@@ -31,7 +29,7 @@ const LoginPage = (props: any) => {
                         />
                       </div>
 
-                      <div className="form-outline mb-4">
+                      <div className="form-outline mb-2">
                         <label className="form-label" htmlFor="password">
                           Password
                         </label>
@@ -42,7 +40,7 @@ const LoginPage = (props: any) => {
                         />
                       </div>
 
-                      <div className="form-check d-flex justify-content-center mb-5">
+                      <div className="form-check d-flex justify-content-center mb-3">
                         <input
                           className="form-check-input me-2"
                           type="checkbox"
@@ -66,14 +64,14 @@ const LoginPage = (props: any) => {
                         </button>
                       </div>
 
-                      <p className="text-center text-muted mt-3 mb-0">
+                      <p className="text-center text-muted mt-2 mb-0">
                         Haven't an account?{" "}
-                        <a href="./signup" className="fw-bold text-body">
-                          <u>Create Account Now!</u>
+                        <a href="../signup" className="fw-bold text-body">
+                          <u>Create Account!</u>
                         </a>
                       </p>
-                      <p className="text-center text-muted mt-3 mb-0">
-                        <a href="./sigup" className="fw-bold text-body">
+                      <p className="text-center text-muted mt-2 mb-0">
+                        <a href="./signup" className="fw-bold text-body">
                           <u>Forgot Password?</u>
                         </a>
                       </p>
@@ -85,7 +83,6 @@ const LoginPage = (props: any) => {
           </div>
         </div>
       </section>
-    </BfLayout>
   );
 };
 export default LoginPage;

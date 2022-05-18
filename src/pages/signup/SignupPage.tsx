@@ -1,9 +1,7 @@
 import { url } from "inspector";
 import React, { Component } from "react";
-import BfLayout from "../../layouts/BeforeLayout";
 const SignupPage = (props: any) => {
   return (
-    <BfLayout>
       <section
         className="vh-100 bg-image"
       >
@@ -128,7 +126,6 @@ const SignupPage = (props: any) => {
           </div>
         </div>
       </section>
-    </BfLayout>
   );
 };
 export default SignupPage;
